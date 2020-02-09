@@ -10,3 +10,5 @@ plt.rcParams['lines.linewidth'] = 0.8
 
 plt.grid(which='major',color='lightgray',linestyle='--')
 plt.grid(which='minor',color='lightgray',linestyle='--')
+
+npg = mpl.colors.ListedColormap(['#E64B3599','gold','limegreen','darkturquoise','indigo'])
