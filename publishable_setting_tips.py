@@ -27,11 +27,11 @@ plt.grid(which='minor',color='lightgray',linestyle='--')#Minor Grid
 ax.yaxis.set_major_formatter(ScalarFormatter(useMathText=True))
 ax.ticklabel_format(style="sci",  axis="y",scilimits=(0,0))
 
+#Delete Axis label
+ax.tick_params(labelbottom=False,labelleft=False,labelright=False,labeltop=False)
+
 #Delete Axis
-ax.tick_params(labelbottom=False,
-               labelleft=False,
-               labelright=False,
-               labeltop=False)
+ax.tick_params(bottom=False,left=False,right=False,top=False)
 
 #Save figure without margin
 plt.savefig('figure.pdf', bbox_inches="tight", pad_inches=0.05)
