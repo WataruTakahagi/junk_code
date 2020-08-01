@@ -23,8 +23,17 @@ plt.rcParams['axes.linewidth'] = 0.5
 plt.grid(which='major',color='lightgray',linestyle='--')#Major Grid
 plt.grid(which='minor',color='lightgray',linestyle='--')#Minor Grid
 
+#y-Axis Scientific notation
+ax.yaxis.set_major_formatter(ScalarFormatter(useMathText=True))
+ax.ticklabel_format(style="sci",  axis="y",scilimits=(0,0))
+
 #Delete Axis
 ax.tick_params(labelbottom=False,
                labelleft=False,
                labelright=False,
                labeltop=False)
+
+#Save figure without margin
+#Save figure without 
+plt.savefig('figure.pdf', bbox_inches="tight", pad_inches=0.05)
+plt.close()
