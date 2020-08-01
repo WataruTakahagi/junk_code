@@ -34,6 +34,5 @@ ax.tick_params(labelbottom=False,
                labeltop=False)
 
 #Save figure without margin
-#Save figure without 
 plt.savefig('figure.pdf', bbox_inches="tight", pad_inches=0.05)
 plt.close()
