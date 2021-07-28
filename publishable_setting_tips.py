@@ -14,11 +14,16 @@ npg_clist = ['#E64B35FF','#4DBBD5FF','#00A087FF','#3C5488FF','#F39B7FFF','#8491B
 plt.rcParams['font.family']= 'sans-serif'
 plt.rcParams['font.sans-serif'] = ['arial']
 plt.rcParams['font.size'] = 15
+plt.rcParams['font.weight'] = 'semibold'
 plt.rcParams['xtick.direction'] = 'out'
 plt.rcParams['ytick.direction'] = 'out'
-plt.rcParams['xtick.major.width'] = 0.5
-plt.rcParams['ytick.major.width'] = 0.5
-plt.rcParams['axes.linewidth'] = 0.5
+plt.rcParams['xtick.major.width'] = 1
+plt.rcParams['ytick.major.width'] = 1
+plt.rcParams['axes.linewidth'] = 1
+
+fig = plt.figure(figsize =(6.4,4.8))
+ax = fig.add_subplot(1,1,1)
+ax.set_axisbelow(True)
 
 plt.grid(which='major',color='lightgray',linestyle='--')#Major Grid
 plt.grid(which='minor',color='lightgray',linestyle='--')#Minor Grid
