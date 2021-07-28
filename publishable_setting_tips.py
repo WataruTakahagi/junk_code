@@ -38,6 +38,8 @@ ax.tick_params(labelbottom=False,labelleft=False,labelright=False,labeltop=False
 #Delete Axis
 ax.tick_params(bottom=False,left=False,right=False,top=False)
 
+ax.set_facecolor('whitesmoke')
+
 #Save figure without margin
 plt.savefig('figure.pdf', bbox_inches="tight", pad_inches=0.05)
 plt.close()
